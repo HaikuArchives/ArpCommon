@@ -1,0 +1,42 @@
+pwd
+cd /boot/home/work/Development
+cd /boot/home/work/Development/ARP
+cd /boot/home/work/Development/ARP/ArpSrc/ArpKernel
+cd /boot/home/work/Development/ARP/ArpSrc/ArpCollections
+cd /boot/home/work/Development/ARP/ArpSrc/ArpLayout
+cd /boot/home/work/Development/ARP/ArpSrc/ArpMidi
+cd /boot/home/work/Development/ARP/ArpSrc/ArpMidiViews
+cd /boot/home/work/Development/ARP/ArpSrc/ArpNetwork
+cd /boot/home/work/Development/ARP/ArpSrc/ArpTerminal
+cd /boot/home/work/Development/ARP/ArpSrc/ArpViewKernel
+cd /boot/home/work/Development/ARP/ArpSrc/FFont
+cd /boot/home/work/Development/ARP/ArpSrc/Sequitur
+cd /boot/home/work/Development/ARP/ArpTest/ArpMidi
+cd /boot/home/work/Development/ARP/ArpTest/ArpLayout
+cd /boot/home/work/Development/ARP/ArpTest
+cd /boot/home/work/Development/ARP/ArpTermEmu
+cd /boot/home/work/Development/ARP/ArpTelnet
+cd /boot/home/work/Development/ARP/MsgEdit
+cd /boot/home/work/Development/ARP/Sequitur
+cd /boot/home/work/Development/ARP/printmsg
+cd /boot/home/work/Development/ARP/sortdir
+cd /boot/home/personal/ARP/Gooey
+cd /boot/home/personal/ARP/ExFiler
+
+make
+make release
+make depends
+make clean
+make dist
+
+obj.x86/LayoutTest&
+
+ARP/tools/makedist ARP ArpTelnet
+
+Gooey --debug=PropListView&
+(cd /boot/home/work/Development/ARP; scandoc -i ArpDoc/template.html ArpHeader/ArpLayout/*.chap ArpHeader/ArpLayout/*.h)
+
+zip -r ../NewStuff.zip * /boot/develop/makefiles
+(cd /boot/home/work/; tar -cvf /dev/disk/floppy/raw NewStuff.zip)
+
+Primitives
